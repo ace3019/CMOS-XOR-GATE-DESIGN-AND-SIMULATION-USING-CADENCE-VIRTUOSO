@@ -182,11 +182,7 @@ Inputs:
 
 ---
 
-## Author
-**Pratyush**  
-BTech in Electronics (VLSI)  
-Punjab Engineering College, Chandigarh  
-[LinkedIn](https://www.linkedin.com/in/pratyush-kumar-076751289/) | [GitHub](https://github.com/pratstick)
+
 
 ---
 
