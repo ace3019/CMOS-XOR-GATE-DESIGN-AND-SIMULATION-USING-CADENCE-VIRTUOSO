@@ -23,9 +23,9 @@ This project involves the **schematic design and simulation** of a **2-input CMO
   - Transistor widths (Wp/Wn) - (120nm / 120nm) , (240nm / 120nm) , (360nm / 120nm) , (480nm / 120nm) , (600nm / 120nm)
   - Temperature: e.g., -40°C, 27°C, 120°C
 
-- ![Truth Table](Images/Truth-Table.png)
-- ![Circuit Diagram](Images/reference-circuit.jpg)
-- ![Expected Waveform](Images/Reference-Circuit-Waveform.jpg)
+<img width="1042" height="745" alt="Truth-Table" src="https://github.com/user-attachments/assets/74137a69-ba3e-46ca-8964-2853846e4fd2" />
+<img width="866" height="957" alt="reference-circuit" src="https://github.com/user-attachments/assets/40f567a1-0c00-4b8e-b9eb-e24076cb79f4" />
+
 
 ---
 
@@ -33,11 +33,15 @@ This project involves the **schematic design and simulation** of a **2-input CMO
 
 The following schematic shows the CMOS implementation of a 2-input XOR gate using complementary pull-up and pull-down networks:
 Figure: CMOS XOR gate schematic drawn in Cadence Virtuoso.
-![schematic](Images/XOR_Schematic.png)
+<img width="1120" height="666" alt="XOR_Schematic" src="https://github.com/user-attachments/assets/f64d4cb6-b7f3-47c6-b497-3bf6e27acb35" />
+
+)
 
 Inputs:
-  - A ![Input A](Images/A_input.png)
-  - B ![Input B](Images/B_input.png)
+  - A <img width="510" height="719" alt="A_input" src="https://github.com/user-attachments/assets/ffada96a-04c3-46e2-9611-07ca22a313ed" />
+
+  - B <img width="505" height="714" alt="B_input" src="https://github.com/user-attachments/assets/0f7a5578-548f-4901-8aaa-9b1784731d37" />
+
 
 ---
 
@@ -54,7 +58,8 @@ Inputs:
 -   PMOS widths: from 120 nm to 600 nm in steps of 120 nm
 
 -   The simulation aimed to analyze the output voltage behavior of the XOR gate under different scenarios.
--   ![ADE Window](Images/DC-transfer-characteristics/window.png)
+-   <img width="691" height="509" alt="window" src="https://github.com/user-attachments/assets/a2d36c69-bcd1-4dac-b8a2-d72952f76b11" />
+
 
 *Sweep on Input A*
 
@@ -62,7 +67,8 @@ Inputs:
 -   Input B: held constant at 0V
 -   This simulates the XOR logic behavior for 0 XOR A
 -   The output exhibits expected rising behavior as input A transitions from logic 0 to logic 1
--   ![Variation in A](Images/DC-transfer-characteristics/varA.png)
+-  <img width="1716" height="837" alt="varA" src="https://github.com/user-attachments/assets/5ed3837a-4916-4d79-9fec-d7c2152da254" />
+
 
 *Sweep on Input B*
 
@@ -70,7 +76,8 @@ Inputs:
 -   Input B: swept from 0V to 1V
 -   This simulates the XOR logic behavior for A XOR 0 (same as above due to symmetry)
 -   Output characteristics are similar to the previous case with consistent logic swing
--   ![Variation in B](Images/DC-transfer-characteristics/varB.png)
+-  <img width="1714" height="834" alt="varB" src="https://github.com/user-attachments/assets/077da002-3e44-4912-b381-e5923f4090c2" />
+
 
 ### Transient Analysis
 
@@ -83,7 +90,8 @@ Inputs:
 
 -   The XOR gate's dynamic behavior was observed through the resulting output waveform.
 -   **Simulation Type**: Transient analysis using **Cadence ADE L**\
-*Figure: ADE L environment used for transient simulations.* ![ADE-L](Images/Trans/27/ADE.png)
+<img width="698" height="504" alt="ADE" src="https://github.com/user-attachments/assets/f2860b55-4533-4be2-a735-a7cdfbfad4d1" />
+
 
 * * * * *
 
@@ -95,14 +103,17 @@ Inputs:
 -   **Temperature**: -40°C, 27°C, and 120°C
 
 -   This setup allows observation of performance variation under different PVT conditions.\
-*Figure: Parametric sweep configuration in ADE L.*![Sweep Config](Images/Trans/-40to+120.png)
+<img width="703" height="507" alt="Screenshot 2025-04-16 170846" src="https://github.com/user-attachments/assets/6f08b06c-93fa-44fa-8abd-96039de23a05" />
+
+
 
 * * * * *
 
 **Transient Response (Baseline)**
 
 -   Output waveform for XOR gate showing expected toggling behavior based on pulse inputs.\
-*Figure: XOR gate transient output showing correct logic transitions.* ![Baseline](Images/Trans/27/120n.png)
+<img width="1712" height="839" alt="120" src="https://github.com/user-attachments/assets/0f8374d3-96de-4512-9902-02af046840ae" />
+
 
 * * * * *
 
@@ -110,7 +121,8 @@ Inputs:
 
 -   PMOS widths varied from 120 nm to 600 nm.
 -   Minor improvement in **rise time** with increased PMOS width; otherwise, output remained consistent.\
-*Figure: XOR output response for different PMOS sizes.*![Varying Width](Images/Trans/VaryingWidth.png)
+*Figure: XOR output response for different PMOS sizes.<img width="1918" height="881" alt="VaryingWidth" src="https://github.com/user-attachments/assets/cf2c6bcc-585e-4622-9ddb-494603961f90" />
+
 
 * * * * *
 
@@ -118,7 +130,8 @@ Inputs:
 
 -   Temperature swept across -40°C, 27°C, and 120°C.
 -   Output waveform shows minimal impact on delay or voltage swing, indicating thermal stability.\
-*Figure: XOR transient response across temperature range.* ![Graph](Images/Trans/graphop.png)
+*Figure: XOR transient response across temperature range.* <img width="1717" height="851" alt="graphop" src="https://github.com/user-attachments/assets/6dbb4538-f250-4767-8c8f-1dce96b972e0" />
+
 
 ---
 
@@ -189,8 +202,6 @@ This project was made possible through the support, tools, and guidance provided
 
 -   **Cadence Design Systems**, for providing the industry-standard tools used for schematic design and simulation.
 -   **Punjab Engineering College ,Chandigarh**, for the academic environment and resources that supported this work.
--   **Ashmit Garg**, VLSI, Punjab Engineering College ,Chandigarh 
--   **Shashwat Mishra**, VLSI, Punjab Engineering College ,Chandigarh
 -   **Department of Electronics and Communication Engineering**, PEC - for enabling access to simulation tools and lab resources.
 
 ---
