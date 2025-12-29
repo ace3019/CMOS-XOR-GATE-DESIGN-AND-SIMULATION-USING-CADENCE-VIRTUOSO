@@ -180,9 +180,6 @@ Inputs:
    - Temperature sweep
 7. Run and observe waveforms.
 
----
-
-
 
 ---
 
