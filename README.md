@@ -199,7 +199,7 @@ Inputs:
 ## Acknowledgements
 
 This project was made possible through the support, tools, and guidance provided by various individuals and institutions. I would like to express my sincere gratitude to:
-
+-   **Team members:** Pratyush Kumar , Ashmit Garg 
 -   **Cadence Design Systems**, for providing the industry-standard tools used for schematic design and simulation.
 -   **Punjab Engineering College ,Chandigarh**, for the academic environment and resources that supported this work.
 -   **Department of Electronics and Communication Engineering**, PEC - for enabling access to simulation tools and lab resources.
